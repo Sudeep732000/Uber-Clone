@@ -6,7 +6,7 @@ function RideOptions({ Pickup, Drop }) {
     const [rideDuration, setrideDuration] = useState([0, 0])
 
     useEffect(() => {
-        fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${Pickup[0]},${Pickup[1]};${Drop[0]},${Drop[1]}?access_token=pk.eyJ1IjoidGVjaGtpZCIsImEiOiJja3ZxZnJ4M24xa2ljMzNxZnNxMzRhem00In0.ZmYGC7iuunOHG7vTu5uEDg`)
+        fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${Pickup[0]},${Pickup[1]};${Drop[0]},${Drop[1]}?access_token=pkAmir.eyJ1IjoidGVjaGtpZCIsImEiOiJja3ZxZnJ4M24xa2ljMzNxZnNxMzRhem00In0.ZmYGC7iuunOHG7vTu5uEDg`)
             .then((res) => res.json())
             .then(data => {
                 setrideDuration(data.routes[0].duration / 100)
