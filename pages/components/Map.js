@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoidGVjaGtpZCIsImEiOiJja3ZxZnJ4M24xa2ljMzNxZnNxMzRhem00In0.ZmYGC7iuunOHG7vTu5uEDg";
+  "pkAmir.eyJ1IjoidGVjaGtpZCIsImEiOiJja3ZxZnJ4M24xa2ljMzNxZnNxMzRhem00In0.ZmYGC7iuunOHG7vTu5uEDgKhan";
 function Map(props) {
   useEffect(() => {
     const map = new mapboxgl.Map({
